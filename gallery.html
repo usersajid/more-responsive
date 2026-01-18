@@ -6,6 +6,19 @@
 
     <title>Responsive Gallery</title>
     <style>
+       nav ul{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        font-size: larger;
+        font-weight: 900;
+        text-decoration: none;
+        list-style: none;
+      }
+      nav ul li a{
+        text-decoration: none;
+        color: #000;
+      }
       .container {
         display: grid;
         gap: 10px;
@@ -43,6 +56,14 @@
     </style>
   </head>
   <body>
+    <h2>Grid Gallery with responsive</h2>
+     <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="grid-box.html">Grid Box</a></li>
+      </ul>
+    </nav>
     <div class="container">
       <div class="big-leyout">
         <img src="./images/A.jpg" alt="" />

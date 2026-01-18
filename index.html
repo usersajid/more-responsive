@@ -5,7 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Flex</title>
     <style>
-      .flexbox  {
+      nav ul{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        font-size: larger;
+        font-weight: 900;
+        text-decoration: none;
+        list-style: none;
+      }
+      nav ul li a{
+        text-decoration: none;
+        color: #000;
+      }
+      #flexbox  {
         display: flex;
         gap: 20px;
         border: 2px solid #000;
@@ -29,7 +42,7 @@
         box-sizing: border-box;
       }
       @media screen and (max-width: 576px) {
-        .flexbox {
+        #flexbox {
           flex-direction: column;
         }
         .container{
@@ -41,7 +54,14 @@
   </head>
   <body>
     <h2>"Responsive Flex Example"</h2>
-    <div class="flexbox">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="grid-box.html">Grid Box</a></li>
+      </ul>
+    </nav>
+    <div id="flexbox">
       <div class="box">
         <h3>box-1</h3>
         <p>

@@ -18,6 +18,40 @@
         text-decoration: none;
         color: #000;
       }
+      .container{
+        gap: 25px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 200px) 50px 50px;
+      }
+      .grid{
+        background-color: brown;
+        padding: 30px;
+
+      }
+      .sidebar{
+        grid-row: span 5;
+      }
+      .footer{
+        grid-column: span 3;
+      }
+      .extra-color{
+        background-color: burlywood;
+      }
+      @media screen and  (max-width: 576px){
+        .container{
+        gap: 25px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+      }
+      .sidebar{
+        grid-row: span 1;
+      }
+      .footer{
+        grid-column: span 1;
+      }
+      }
     </style>
 </head>
 <body>
@@ -28,5 +62,19 @@
         <li><a href="grid-box.html">Grid Box</a></li>
       </ul>
     </nav>
+    <div class="container">
+        <div class="grid sidebar">box 1</div>
+        <div class="grid">box 2</div>
+        <div class="grid">box 3</div>
+        <div class="grid">box 4</div>
+        <div class="grid">box 5</div>
+        <div class="grid extra-color">box 6</div>
+        <div class="grid extra-color">box 7</div>
+        <div class="grid">box 8</div>
+        <div class="grid extra-color">box 9</div>
+        <div class="grid extra-color">box 10</div>
+        <div class="grid footer">box 11</div>
+        <div class="grid footer">box 12</div>
+    </div>
 </body>
 </html>
